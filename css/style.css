@@ -1,0 +1,114 @@
+/* === Global Styles === */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* === Navigation Bar === */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    padding: 15px 40px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: #b9975b;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b9975b;
+}
+
+/* === Hero Section === */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #b9975b;
+    margin-bottom: 20px;
+    object-position: 50% 90%;
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.1em;
+    max-width: 600px;
+    color: #c4c4c4;
+}
+
+/* === Content Section === */
+.content-section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section h2 {
+    color: #b9975b;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    border-bottom: 1px solid #2a2a2a;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* === Footer === */
+footer {
+    background-color: #121212;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #888;
+    border-top: 1px solid #2a2a2a;
+}
+
+/* === Content Images & Media === */
+.media-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.content-image {
+    max-width: 90%;
+    border-radius: 10px;
+    border: 2px solid #2a2a2a;
+}
