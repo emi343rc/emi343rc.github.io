@@ -451,7 +451,6 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
 }
 
 /* Zoom and light-up hover effect */
@@ -492,4 +491,91 @@ footer {
   font-weight: 600; /* keeps it bold-ish but not too heavy */
 }
 
+.third-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.third-gallery figure {
+  text-align: center;
+}
+
+.third-gallery img {
+  width: 305px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.third-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.third-gallery figcaption {
+  margin-top: 10px;
+  color: #b9975b;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.third-narrative {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+}
+
+.third-narrative h2 {
+  color: #9bb3c0;
+}
+
+.third-features {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+}
+
+.third-features h2 {
+  color: #9bb3c0;
+}
+
+.third-features img {
+  width: auto;
+  max-height: 400px; /* sets consistent height to fix small cropping differences */
+  border: 2px solid #b9975b; /* accent color border */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.third-diffs {
+  display: flex;
+  justify-content: space-around; /* even spacing on both sides */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.third-outcomes {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #f0ede9;
+  padding-bottom: 0px;
+}
+
+.third-outcomes strong {
+  color: #d4af37; /* your existing gold accent color */
+  font-weight: 600; /* keeps it bold-ish but not too heavy */
+}
 

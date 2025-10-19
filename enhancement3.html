@@ -24,24 +24,124 @@
     </header>
 
     <section class="content-section">
-        <h1>Enhancement 3</h1>
+        <h1>Enhancement 3: Databases</h1>
         <p>
-            This section highlights the third enhancement made to the original artifact.
-            I’ll explain what was improved, why it was important, and how it improved the overall project.
+            This enhancement introduced a cloud-based database system using MongoDB Atlas to add user authentication and persistent data storage. The application now features a Login/Register system, saves each user’s progress to the cloud, and records individual highscores for Easy, Medium, and Hard difficulties. This upgrade significantly improved functionality and scalability, showcasing the integration of database management and application logic. The button below allows you to download the updated artifact at this stage of development.
         </p>
 
-        <div class="media-container">
-            <img src="images/enhancement1-placeholder.jpg" alt="Enhancement 3 Screenshot" class="content-image">
+        <div class="third-gallery">
+            <figure>
+                <img src="images/login_form.png" alt="Login Form Screenshot">
+                 <figcaption>Login Form</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/register_form.png" alt="Register Form Screenshot">
+                <figcaption>Register Form</figcaption>
+             </figure>
         </div>
 
         <p>
-            (Placeholder text: Later, I’ll include before-and-after comparisons, technical explanations, 
-            and reflection on what I learned while implementing this enhancement.)
+            Click the images to make them bigger !
+            The button below lets you download the latest version of the artifact, the one with all the previous enhancements until now
         </p>
+
+        <a href="files/GameHubRTE_MilestoneFour.zip" download class="download1-btn">
+        Download Enhanced Artifact
+        </a>
+
     </section>
+
+
+    <section class="third-narrative">
+        <h2>Narrative</h2>
+
+        <p>For this enhancement, I integrated MongoDB Atlas, a cloud-based database solution, to introduce persistent data storage and authentication features to the application. Upon launching the program, users are now prompted with a Login/Register form that verifies credentials before granting access to the main application. Each user’s progress, including high scores and unlocks, is securely stored in a MongoDB cluster I created. The game now maintains individual highscores for each difficulty level — Easy, Medium, and Hard — and tracks whether the user has unlocked Hard mode.</p>
+        <p>Looking ahead, I plan to expand the database functionality by adding features like achievements, skins, milestones, in-game currency, and a shop system. These additions would bring a more engaging and rewarding experience for players and expand the overall scope beyond just Flappy Bird, which has been my main focus so far.</p>
+        <p>Throughout this enhancement, I learned a lot about the process of integrating databases into desktop applications. Getting started with MongoDB was straightforward — creating an account, setting up a free cluster, and installing the necessary MongoDB driver in Visual Studio. The real challenge came in implementing it correctly and adapting my existing code to handle database operations. Once I began recognizing patterns and understanding the structure of database logic, it became intuitive and exciting to work with.</p>
+        <p>One major challenge I encountered was designing the system to handle separate highscores for each difficulty. Initially, all difficulties shared one highscore, which didn’t make sense for progression. I addressed this by modifying label behaviors, adding new UI indicators for the current difficulty, and ensuring each score was stored and retrieved correctly from the database. In the end, I was proud of the result — the database integration worked seamlessly, and I felt I had taken a big step forward in applying real-world software engineering concepts.</p>
+        
+    </section>
+
+    <section class="third-features">
+
+        <h2>Databases & Difficulty</h2>
+        <p>Below are the images showing how the data is being stored in our MongoDB cluster, very important to notice how passwords are alwas hashed and never stored in plain text. </p>
+
+        <div class="third-screenshots">
+            <img src="images/database-cluster.png" alt="Database cluster">
+        </div>
+
+        <p>Below you can see at the top-right corner how the difficulty is being displayed so the player knows which difficulty he is playing on, same with the highscore.</p>
+
+        <div class="third-diffs">
+            <img src="images/third-diff.png" alt="Hard Difficulty">
+            <img src="images/third-med.png" alt="Medium Difficulty">
+        </div>
+
+    </section>
+
+    <section class="third-outcomes">
+        <h2>Course Outcomes</h2>
+        <ul>
+            <li class="attained"><strong>Outcome 1:</strong> Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science</li>
+            <li class="attained"><strong>Outcome 2:</strong> Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts</li>
+            <li class="attained"><strong>Outcome 3:</strong> Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices</li>
+            <li class="attained"><strong>Outcome 4:</strong> Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals</li>
+            <li class="attained"><strong>Outcome 5:</strong> Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources</li>
+        </ul>
+    </section>
+
+    <div id="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <section class="enhancement-links">
+    <h3>Explore the Enhancements</h3>
+    <div class="enhancement-gallery">
+        <a href="artifact-original.html">
+        <img src="images/enhancement1_thumb.png" alt="Original Artifact">
+        <p>Original Artifact</p>
+        </a>
+        <a href="enhancement1.html">
+        <img src="images/enhancement2_thumb.png" alt="Enhancement 1">
+        <p>Enhancement 1</p>
+        </a>
+        <a href="enhancement2.html">
+        <img src="images/enhancement3_thumb.png" alt="Enhancement 2">
+        <p>Enhancement 2</p>
+        </a>
+    </div>
+    </section>
+
 
     <footer>
         <p>© 2025 My ePortfolio | Enhancement 3</p>
     </footer>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.close');
+  const galleryImages = document.querySelectorAll('.third-gallery img');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex'; // ensures centering
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
 </body>
 </html>
