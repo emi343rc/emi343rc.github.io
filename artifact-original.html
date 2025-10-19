@@ -26,22 +26,100 @@
     <section class="content-section">
         <h1>Original Artifact</h1>
         <p>
-            This section showcases my original artifact — the starting point before applying enhancements. 
-            It represents my initial understanding of software design and coding practices.
+              This artifact represents the foundation of my project before applying any enhancements. 
+              It demonstrates the initial functionality, design approach, and coding techniques that served 
+              as the baseline for improvement.
         </p>
 
         <div class="media-container">
-            <img src="images/original-placeholder.jpg" alt="Original Artifact Screenshot" class="content-image">
+            <img src="images/original-main.png" alt="Original Artifact Screenshot" class="content-image">
         </div>
 
         <p>
-            (Placeholder text: here, I’ll describe the project purpose, its main features, 
-            and what I aimed to achieve before making improvements.)
+          This project was developed during my IT-145 course using C# and Windows Forms. 
+          The downloadable file below contains the original version of the artifact prior to any enhancements.
         </p>
+
+        <a href="files/GameHubRTE.zip" download class="download-btn">
+        Download Original Artifact
+        </a>
     </section>
+
+    <section class="narrative-original">
+      <h3>Initial Narrative</h3>
+      <p>
+          This project was developed collaboratively as part of a group assignment. 
+          While some portions of the code were written by my teammates, I took the lead on designing the overall structure of the application and developing one of the three games included. 
+          I took great pride in the sections I implemented, striving to go beyond the project’s baseline requirements and deliver clean, organized, and functional code.
+      </p>
+      <p>
+        For future enhancement, my plan focuses on rebuilding or refining the two remaining games originally created by my teammates. My goal would be to polish their design, ensure smooth gameplay, and achieve a consistent user experience across all games. 
+          Although I may replace the Minesweeper game with a new one that better fits the project’s tone and mechanics, this enhancement plan would significantly improve the application’s quality, playability, and cohesion.
+      </p>
+    </section>
+
+    <section class="screenshots-original">
+      <h3>Artifact Screenshots</h3>
+   
+      <div class="gallery">
+      <img src="images/original-1.png" alt="Original Artifact Screenshot 1">
+      <img src="images/original-2.png" alt="Original Artifact Screenshot 2">
+      <img src="images/original-3.png" alt="Original Artifact Screenshot 3">
+     </div>
+
+    </section>
+
+    <div id="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <section class="enhancement-links">
+  <h3>Explore the Enhancements</h3>
+  <div class="enhancement-gallery">
+    <a href="enhancement1.html">
+      <img src="images/enhancement1_thumb.png" alt="Enhancement 1">
+      <p>Enhancement 1</p>
+    </a>
+    <a href="enhancement2.html">
+      <img src="images/enhancement2_thumb.png" alt="Enhancement 2">
+      <p>Enhancement 2</p>
+    </a>
+    <a href="enhancement3.html">
+      <img src="images/enhancement3_thumb.png" alt="Enhancement 3">
+      <p>Enhancement 3</p>
+    </a>
+  </div>
+</section>
 
     <footer>
         <p>© 2025 My ePortfolio | Original Artifact</p>
     </footer>
+
+    <script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const close = document.querySelector('.close');
+  const galleryImages = document.querySelectorAll('.gallery img');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'block';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  close.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  // Close lightbox when clicking outside the image
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+
 </body>
 </html>
