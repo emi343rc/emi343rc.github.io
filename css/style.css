@@ -392,3 +392,104 @@ footer {
   margin-top: 8px;          /* small spacing from the list above */
   font-style: italic;       /* optional: gives a subtle distinction */
 }
+
+.unlocking-hard {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.unlocking-hard h2{
+  color: #9bb3c0;
+}
+
+.second-narrative {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 0px;
+}
+
+.second-narrative h2 {
+  color: #9bb3c0;
+}
+
+.difficulties-section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+}
+
+.difficulties-section h2 {
+    color: #9bb3c0;
+
+}
+
+/* Container for the three screenshots */
+.second2-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  margin: 30px 0;
+}
+
+/* Figure wrapper */
+.second2-gallery figure {
+  text-align: center;
+  margin: 0;
+}
+
+/* Individual screenshots */
+.second2-gallery img {
+  max-width: 600px;
+  max-height: 350px; /* sets consistent height to fix small cropping differences */
+  object-fit: cover; /* ensures image fills space without distortion */
+  border: 2px solid #b9975b; /* accent color border */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Zoom and light-up hover effect */
+.second2-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(185, 151, 91, 0.6);
+}
+
+/* Optional sparkle effect on hover (subtle shimmer) */
+@keyframes shimmer {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.3); }
+  100% { filter: brightness(1); }
+}
+
+.second2-gallery img:hover {
+  animation: shimmer 1s ease-in-out;
+}
+
+/* Captions */
+.second2-gallery figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #ddd;
+  font-style: italic;
+}
+
+.second-outcomes {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #f0ede9;
+    padding-bottom: 0px;
+}
+
+.second-outcomes strong {
+  color: #d4af37; /* your existing gold accent color */
+  font-weight: 600; /* keeps it bold-ish but not too heavy */
+}
+
+

@@ -24,20 +24,99 @@
     </header>
 
     <section class="content-section">
-        <h1>Enhancement 2</h1>
+        <h1>Enhancement 2: Algorithms and Data structures </h1>
         <p>
-            This section highlights the second enhancement made to the original artifact.
-            I’ll explain what was improved, why it was important, and how it improved the overall project.
+            This enhancement focused on expanding the game’s logic by introducing a difficulty system that allows players to choose between Easy, Medium, and Hard modes. The goal was to make gameplay more dynamic and rewarding by requiring players to unlock Hard mode after reaching a certain score. This addition not only improved user engagement but also demonstrated a stronger use of algorithms and object-oriented programming principles to manage game states efficiently.
         </p>
 
         <div class="media-container">
-            <img src="images/enhancement1-placeholder.jpg" alt="Enhancement 2 Screenshot" class="content-image">
+            <img src="images/second-main.png" alt="Enhancement 2 Screenshot" class="content-image">
         </div>
 
         <p>
-            (Placeholder text: Later, I’ll include before-and-after comparisons, technical explanations, 
-            and reflection on what I learned while implementing this enhancement.)
+            For testing purposes I changed the value required to unlock the 'Hard' difficulty to 1, but the official value is 50+
+            The button below lets you download the artifact enhanced with the new difficulties
         </p>
+
+        <a href="files/GameHubRTE_MilestoneThree.zip" download class="download1-btn">
+        Download Enhanced Artifact
+        </a>
+    </section>
+
+    <section class="unlocking-hard">
+        <h2>Unlocking Hard Difficulty</h2>
+        <p>After reaching the score of 50 in the 'Medium' difficulty you will get a dialog box like this one:</p>
+
+        <div class="second-gallery">
+        <img src="images/second-1.png" alt="Enhanced Artifact Screenshot 1">
+        <p>After unlocking the Hard difficulty you can go back to the 'Difficulty Selector' window and the button for the new difficulty should be unlocked</p>
+        <img src="images/second-2.png" alt="Enhanced Artifact Screenshot 2">
+
+        </div>
+
+    </section>
+
+    <section class="second-narrative">
+        <h2>Narrative</h2>
+        <p>For this enhancement, which focused on the Algorithms and Data Structures area, my goal was to expand the game’s logic by implementing a difficulty selection system—introducing “Easy,” “Medium,” and “Hard” modes. I wanted the player to have access to Easy and Medium difficulties from the start, but to unlock the Hard mode only after meeting a specific requirement: scoring over 50 points on Medium difficulty. Once unlocked, the Hard mode would increase various parameters such as object speed, size, and gap spacing to create a more challenging experience.</p>
+        <p>Initially, my plan was quite simple but not efficient—I considered duplicating the existing game form, renaming them to “EasyFlappy,” “HardFlappy,” and so on, and modifying each one individually. However, after reflecting on the scalability and maintainability of this approach, I decided to pursue a more robust, object-oriented solution. I introduced several new classes, including Difficulty.cs, DifficultySettings.cs, UnlockManager.cs, and GameProgress.cs, to manage the game logic dynamically. These handled aspects such as difficulty configuration, unlock conditions, and progression tracking.</p>
+        <p>I then moved on to building the DifficultySelector form, which would serve as the player’s interface for selecting a difficulty. While I enjoyed refining the UI, I encountered multiple setbacks. Some buttons were misaligned, unresponsive, or overlapped, and at one point, I accidentally deleted what I thought was an unused event handler—breaking the entire project in the process. The handler itself wasn’t functional, but its reference still existed in the form’s designer file, and removing that single line took me hours to identify and fix.</p>
+        <p>Despite these challenges, implementing this system was extremely rewarding. I spent additional time ensuring that the lock/unlock logic for the Hard difficulty worked seamlessly, and I left this enhancement with a much deeper understanding of how algorithmic structures and object-oriented programming principles can work together to create scalable and dynamic game systems.</p>
+
+
+    </section>
+
+    <section class="difficulties-section">
+        <h2>Different values</h2>
+
+        <div class="second2-gallery">
+        <figure>
+            <img src="images/second-easy.png" alt="Easy difficulty pipe gap">
+            <figcaption>Easy Difficulty – Wider gap, slower speed</figcaption>
+        </figure>
+        <figure>
+            <img src="images/second-medium.png" alt="Medium difficulty pipe gap">
+            <figcaption>Medium Difficulty – Standard gap and speed</figcaption>
+        </figure>
+        
+        <figure>
+            <img src="images/second-hard.png" alt="Hard difficulty pipe gap">
+            <figcaption>Hard Difficulty – Narrow gap, faster movement</figcaption>
+        </figure>
+        
+    </section>
+
+    <section class="second-outcomes">
+        <h2>Course Outcomes</h2>
+        <ul>
+            <li class="attained"><strong>Outcome 1:</strong> Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science</li>
+            <li><strong>Outcome 2:</strong> Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts</li>
+            <li class="attained"><strong>Outcome 3:</strong> Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices</li>
+            <li class="attained"><strong>Outcome 4:</strong> Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals</li>
+            <li><strong>Outcome 5:</strong> Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources</li>
+        </ul>
+    </section>
+
+
+    <section class="enhancement-links">
+        <h3>Explore the Enhancements</h3>
+        <div class="enhancement-gallery">
+        <a href="artifact-original.html">
+      <img src="images/enhancement1_thumb.png" alt="Original Artifact">
+      <p>Original Artifact</p>
+         </a>
+        <a href="enhancement1.html">
+      <img src="images/enhancement2_thumb.png" alt="Enhancement 1">
+      <p>Enhancement 1</p>
+        </a>
+        <a href="enhancement3.html">
+      <img src="images/enhancement3_thumb.png" alt="Enhancement 3">
+      <p>Enhancement 3</p>
+        </a>
+        </div>
+    </section>
+
+
     </section>
 
     <footer>
