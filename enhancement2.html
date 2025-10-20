@@ -97,20 +97,22 @@
         </ul>
     </section>
 
+    <p class="course-note"><strong>Note:</strong> The highlighted outcomes indicate those achieved during this enhancement.</p>
+
 
     <section class="enhancement-links">
         <h3>Explore the Enhancements</h3>
         <div class="enhancement-gallery">
         <a href="artifact-original.html">
-      <img src="images/enhancement1_thumb.png" alt="Original Artifact">
+      <img src="images/original-main.png" alt="Original Artifact">
       <p>Original Artifact</p>
          </a>
         <a href="enhancement1.html">
-      <img src="images/enhancement2_thumb.png" alt="Enhancement 1">
+      <img src="images/original-2.png" alt="Enhancement 1">
       <p>Enhancement 1</p>
         </a>
         <a href="enhancement3.html">
-      <img src="images/enhancement3_thumb.png" alt="Enhancement 3">
+      <img src="images/login_form.png" alt="Enhancement 3">
       <p>Enhancement 3</p>
         </a>
         </div>
@@ -122,39 +124,5 @@
     <footer>
         <p>© 2025 My ePortfolio | Enhancement 2</p>
     </footer>
-
-    <div id="lightbox">
-      <span class="close">&times;</span>
-      <img class="lightbox-content" id="lightbox-img">
-    </div>
-
-<script>
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const closeBtn = document.querySelector(".close");
-
-  // When any image inside .screenshot-comparison is clicked
-  document.querySelectorAll(".screenshot-comparison img").forEach(img => {
-    img.addEventListener("click", () => {
-      lightbox.style.display = "flex";
-      lightboxImg.src = img.src;
-      document.body.style.overflow = "hidden"; // prevent background scroll
-    });
-  });
-
-  // Close lightbox when clicking the close button or background
-  closeBtn.addEventListener("click", () => {
-    lightbox.style.display = "none";
-    document.body.style.overflow = "auto";
-  });
-
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) {
-      lightbox.style.display = "none";
-      document.body.style.overflow = "auto";
-    }
-  });
-</script>
-
 </body>
 </html>

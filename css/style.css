@@ -170,8 +170,8 @@ footer {
 }
 
 .enhancement-gallery img {
-  width: 160px;
-  height: 100px;
+  width: 200px;
+  height: 160px;
   object-fit: cover;
   border-radius: 8px;
   border: 2px solid #b9975b;
@@ -577,5 +577,99 @@ footer {
 .third-outcomes strong {
   color: #d4af37; /* your existing gold accent color */
   font-weight: 600; /* keeps it bold-ish but not too heavy */
+}
+
+.third-outcomes h2 {
+  color: #9bb3c0;
+}
+
+.second-outcomes h2 {
+  color: #9bb3c0;
+}
+
+.course-outcomes h2 {
+  color: #9bb3c0;
+}
+
+.home-links {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.home-links h3 {
+  color: #b9975b;
+  margin-bottom: 20px;
+}
+
+.home-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.home-gallery a {
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.home-gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #b9975b;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.home-gallery a:hover img {
+  transform: scale(1.05);
+  border-color: #d4af37;
+}
+
+.home-gallery a:hover p {
+  color: #d4af37;
+}
+
+.code-links {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.code-links h3 {
+  color: #b9975b;
+  margin-bottom: 20px;
+}
+
+.code-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.code-gallery a {
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.code-gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #b9975b;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.code-gallery a:hover img {
+  transform: scale(1.05);
+  border-color: #d4af37;
+}
+
+.code-gallery a:hover p {
+  color: #d4af37;
 }
 
